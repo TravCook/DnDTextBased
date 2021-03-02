@@ -1,11 +1,13 @@
 import React from "react"
+import { render } from "react-dom"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Form from "react-bootstrap/Form"
 import Row from "react-bootstrap/Row"
 import Button from "react-bootstrap/Button"
-import "./login.css"
+import Col from "react-bootstrap/Col"
+import "./signupPage.css"
 
-function Login(){
+function Signup(){
   return(
     <Jumbotron className="jumbotron">
       <h1>Please log in below</h1>
@@ -18,12 +20,16 @@ function Login(){
           <Form.Label><h2 className="label">Password</h2></Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
+        <Form.Group controlID="formBasicPasswordConfirm">
+          <Form.Label><h2 className="label"> Confirm Password</h2></Form.Label>
+          <Form.Control type="password" placeholder="Password" />
+        </Form.Group>
         <Row className="buttonRow">
-          <Button className="btn-success" type="submit">Login</Button>
+          <Button className="btn-success" type="submit">Sign Up</Button>
         </Row>
       </Form>
     </Jumbotron>
   )
 }
 
-export default Login
+export default Signup

@@ -1,11 +1,12 @@
 .jumbotron{
   background-color: #ffffff;
+  margin: auto;
   width: 25%;
   text-align: center;
   border-radius: 5%;
-  margin: auto;
 }
 .container{
+  margin-top: 25%;
   padding-bottom: 25px 
 }
 .buttonRow{
