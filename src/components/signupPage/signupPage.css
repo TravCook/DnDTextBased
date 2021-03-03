@@ -1,14 +1,11 @@
-.jumbotron{
+.signupJumbotron{
   background-color: #ffffff;
   margin: auto;
   width: 25%;
   text-align: center;
   border-radius: 5%;
 }
-.container{
-  margin-top: 25%;
-  padding-bottom: 25px 
-}
+
 .buttonRow{
   margin: 10px
 }
@@ -17,8 +14,4 @@
 }
 .loginForm{
   padding: 5px
-}
-.Col{
-  width: 45%;
-  margin: none
 }

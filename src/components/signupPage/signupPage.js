@@ -9,7 +9,7 @@ import "./signupPage.css"
 
 function Signup(){
   return(
-    <Jumbotron className="jumbotron">
+    <Jumbotron className="signupJumbotron">
       <h1>Please log in below</h1>
       <Form className="loginForm">
         <Form.Group controlID="formBasicEmail">

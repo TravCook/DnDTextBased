@@ -1,4 +1,4 @@
-.jumbotron{
+.loginJumbotron{
   background-color: #ffffff;
   width: 25%;
   text-align: center;
@@ -16,8 +16,4 @@
 }
 .loginForm{
   padding: 5px
-}
-.Col{
-  width: 45%;
-  margin: none
 }

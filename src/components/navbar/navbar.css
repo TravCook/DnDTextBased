@@ -1,12 +1,18 @@
 .navbar{
   background-color: #0c141f;
   width: 100%;
-  height: 40px
+  height: 40px;
 }
-
+.title{
+  color: white;
+}
+.noPad{
+  padding: 0px
+}
 .buttonsCol{
   float: right;
-  margin-top: 8px;
+  text-align: right;
+  padding: 0px
 }
 .navButton{
   background-color: crimson;
@@ -15,4 +21,7 @@
   color: white;
   border-radius: 5px;
   text-decoration: none;
+}
+.creationTron{
+  text-align: center;
 }

@@ -4,15 +4,16 @@ import "./App.css";
 import Navbar from "./components/navbar/navbar.js"
 import Login from "./components/loginPage/login.js"
 import Signup from "./components/signupPage/signupPage.js"
+import Create from "./components/characterCreate/characterCreate.js"
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div className="loginContainer">
-        <Route exact path="/" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-      </div>
+      <Route exact path="/" component={Login} />
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/create" component={Create} />
     </Router>
   );
 }

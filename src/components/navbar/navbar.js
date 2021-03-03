@@ -7,9 +7,9 @@ import "./navbar.css"
 
 function Navigation(){
   return(
-    <Container fluid>
+    <Container fluid className="noPad">
       <Navbar className="navbar">
-        <Navbar.Brand>Home</Navbar.Brand>
+        <Navbar.Brand className="title">Text Based DND 5e</Navbar.Brand>
         <Col className="buttonsCol">
         <Button rel="noreferrer" className="navButton Button" href="/">Login</Button>
         <Button rel="noreferrer" className="navButton Button" href="/signup">Sign Up</Button>

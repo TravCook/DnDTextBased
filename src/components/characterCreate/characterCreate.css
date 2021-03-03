@@ -1,0 +1,45 @@
+.ability{
+  text-align: center;
+}
+.abilityCard{
+  background-color: darkgrey;
+  text-align: center;
+  margin: 5%
+}
+.charCreation{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+.abilityRoll{
+  text-align: center;
+}
+.abilityRollRow{
+  padding: 10px
+}
+.inc{
+  width: 45%;
+  float: left;
+}
+.dec{
+  width: 45%;
+  float: right;
+}
+.dropdownRow{
+  padding: 15px;
+}
+.bottomRow{
+  padding: 15px
+}
+.alignmentGrid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+.abilityNum{
+  width: 25%;
+  display:unset;
+}
+.alignCard{
+  text-align: center;
+}
