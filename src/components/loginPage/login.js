@@ -8,7 +8,6 @@ import "./login.css"
 function Login(){
   return(
     <Jumbotron className="loginJumbotron">
-      <h1>Please log in below</h1>
       <Form className="loginForm">
         <Form.Group controlID="formBasicEmail">
           <Form.Label><h2 className="label">Email Address</h2></Form.Label>
