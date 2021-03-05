@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(routes)
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "..", "build", "index.html"))
 })
@@ -23,8 +23,8 @@ mongoose.connect(connection,{ useNewUrlParser: true, useUnifiedTopology: true, u
     .then(() => console.log("Database Connected Successfully"))
     .catch(err => console.log(err));
 
-app.use(cors())
-app.use(routes)
+// app.use(cors())
+
 
 
 // Start the API server
