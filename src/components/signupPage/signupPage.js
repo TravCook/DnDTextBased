@@ -35,6 +35,7 @@ class Signup extends React.Component{
       axios.post("/api/user", user)
       .then(res=>{
         console.log(res)
+        window.location.href = "/"
       })
     }
   }
