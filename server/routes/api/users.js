@@ -6,6 +6,8 @@ router.route("/")
   .post(userController.create)
   .get(userController.findOne)
 
+router.route("/user/:email")
+.get(userController.findOne)
 
 module.exports = router;
 
