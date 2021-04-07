@@ -32,15 +32,20 @@ class Signup extends React.Component{
         email: this.state.email,
         password: hashedPassword
       }
-      axios.get(user.email)
+      axios.get("/api/user/" + user.email)
       .then(res=>{
         console.log(res)
+        if(res.data != ""){
+          alert("This account already exists!")
+        }else{
+          axios.post("/api/user", user)
+          .then(res=>{
+            console.log(res)
+            window.location.href = "/"
+          })
+        }
       })
-      // axios.post("/api/user", user)
-      // .then(res=>{
-      //   console.log(res)
-      //   // window.location.href = "/"
-      // })
+
     }
   }
 
